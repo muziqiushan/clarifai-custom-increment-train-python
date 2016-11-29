@@ -11,12 +11,11 @@
 # File Structure
     EADME.md
     |-- test_clarifai.py (basic demo of clarifai)
-    |-- test_clarifai2.py (<b>main code</b>: update images and concepts ;create or update incrementally the model;then train the model)
+    |-- test_clarifai2.py (*main code*: update images and concepts ;create or update incrementally the model;then train the model)
     |-- test_clarifai3.py (predict with the model trained above)
     |-- test_clean.py (for test clean the model)
     |-- test_update.py (for test update the model with specified concepts)
-    |-- test_input.py (for print all of the input image info...later,I found the uploaded image info at official's cms: 
-        <b>https://preview.clarifai.com/#/apps/${app_id}/</b> including crud of the images)
+    |-- test_input.py (for print all of the input image info...later,I found the uploaded image info at official's [cms](https://preview.clarifai.com/#/apps/${app_id}/) including crud of the images)
     |-- test_image_clarifai_1 (the test case for general model; in other word ,for test_clarifai.py)
     |   |-- 1.jpg
     |   |-- 3.jpg
@@ -46,9 +45,8 @@
     |   `-- xyy5.jpg
     |-- test_dir_walk.py...etc  (middle crop for unit test; can be ignored )
 # helpful and getting started link of clarifai:
-    1. lastest version for download ,note <b>latest</b>!! : https://sdk.clarifai.com/python/docs/latest/install.html 
-    2. api reference , also latest: https://sdk.clarifai.com/python/docs/latest/clarifai.rest.html
-    3. application , find the app id and secret here : https://developer-preview.clarifai.com/account/applications/
-    4. cms, management of your app/collection/image data;<b>pay attention to</b> the left pannel ,Unfolding will bring your eyes bright:
-        https://preview.clarifai.com/#/apps/${app_id}/
+    1. lastest version for download ,note *latest*!! : [install](https://sdk.clarifai.com/python/docs/latest/install.html) 
+    2. api reference , also latest: [api reference](https://sdk.clarifai.com/python/docs/latest/clarifai.rest.html)
+    3. application , find the app id and secret here : [your app id & app secret](https://developer-preview.clarifai.com/account/applications/)
+    4. cms, management of your app/collection/image data;*pay attention to* the left pannel ,Unfolding will bring your eyes bright: [backend cms](https://preview.clarifai.com/#/apps/${app_id}/)
 
