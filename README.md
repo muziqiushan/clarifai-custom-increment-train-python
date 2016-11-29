@@ -1,5 +1,5 @@
 # clarifai-custom-increment-train-python
-    image classify  based on clarifai python api ; with the capacity of custom increment train python
+    image classify  based on clarifai python api ; with the capacity of custom incrementally trainning model
 # about clarifai
     abstract : Build smarter apps faster with Clarifai’s powerful visual recognition technology.--reference from official
 # demo environment:
