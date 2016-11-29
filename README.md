@@ -1,13 +1,13 @@
 # clarifai-custom-increment-train-python
-image classify  based on clarifai python api ; with the capacity of custom increment train python
+    image classify  based on clarifai python api ; with the capacity of custom increment train python
 # about clarifai
-abstract : Build smarter apps faster with Clarifai’s powerful visual recognition technology.--reference from official
+    abstract : Build smarter apps faster with Clarifai’s powerful visual recognition technology.--reference from official
 # demo environment:
-python2.7.5; with module of :
-    clarifai (2.0.14)
-    PySocks (1.6.1)
-    shadowsocks (2.8.2)
-    SocksiPy-branch (1.1)
+    python2.7.5; with module of :
+        clarifai (2.0.14)
+        PySocks (1.6.1)
+        shadowsocks (2.8.2)
+        SocksiPy-branch (1.1)
 # File Structure
     EADME.md
     |-- test_clarifai.py (basic demo of clarifai)
