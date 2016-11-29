@@ -10,7 +10,7 @@ python2.7.5; with module of :
 - PySocks (1.6.1)
 - shadowsocks (2.8.2)
 - SocksiPy-branch (1.1)
-
+```
 # File Structure
 EADME.md
 |-- test_clarifai.py (basic demo of clarifai)
@@ -18,7 +18,7 @@ EADME.md
 |-- test_clarifai3.py (predict with the model trained above)
 |-- test_clean.py (for test clean the model)
 |-- test_update.py (for test update the model with specified concepts)
-|-- test_input.py (for print all of the input image info...later,I found the uploaded image info at official's [cms](https://preview.clarifai.com/#/apps/${app_id}/) including crud of the images)
+|-- test_input.py (for print all of the input image info...later,I found the uploaded image info at official's CMS :(https://preview.clarifai.com/#/apps/${app_id}/) including crud of the images)
 |-- test_image_clarifai_1 (the test case for general model; in other word ,for test_clarifai.py)
 |   |-- 1.jpg
 |   |-- 3.jpg
@@ -47,6 +47,7 @@ EADME.md
 |   |-- xyy4.jpg
 |   `-- xyy5.jpg
 |-- test_dir_walk.py...etc  (middle crop for unit test; can be ignored )
+```
 # helpful and getting started link of clarifai:
 - lastest version for download ,note *latest*!! : [install](https://sdk.clarifai.com/python/docs/latest/install.html) 
 - api reference , also latest: [api reference](https://sdk.clarifai.com/python/docs/latest/clarifai.rest.html)
