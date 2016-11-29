@@ -51,7 +51,7 @@ EADME.md
 |   `-- xyy5.jpg
 |-- test_dir_walk.py...etc  (middle crop for unit test; can be ignored )
 ```
-# helpful and getting started link of clarifai:
+# Helpful Reference:
 - lastest version for download ,**note latest**!! : [install](https://sdk.clarifai.com/python/docs/latest/install.html) 
 - api reference , also latest: [api reference](https://sdk.clarifai.com/python/docs/latest/clarifai.rest.html)
 - application , find the app id and secret here : [your app id & app secret](https://developer-preview.clarifai.com/account/applications/)
