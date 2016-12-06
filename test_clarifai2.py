@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import re  
-import sys  
-import os  
-import json  
+import re
+import sys
+import os
+import json
 import socks
 import socket
 from clarifai.rest import ClarifaiApp
-from clarifai.rest import Image
 from clarifai.rest.client import ApiError
 #--proxy
 def create_connection(address, timeout=None, source_address=None):
@@ -26,19 +25,26 @@ model_id = 'test-robot';
 for_update = set();
 # app.inputs.create_image_from_url(url='https://samples.clarifai.com/puppy.jpeg', concepts=['my puppy'])
 # app.inputs.create_image_from_url(url='https://samples.clarifai.com/wedding.jpg', not_concepts=['my puppy'])
-tagMap = {'fls':'弗利萨','xyy':'喜羊羊','atm':'奥特曼'}
-def walk_dir(dir, topdown = True):  
+tagMap = {}
+def walk_dir(dir1, recursion = 0,topdown = True):
     global tagMap;
+    global rec
+    rec = recursion
     tagValue = '';
-    for root, dirs, files in os.walk(dir, topdown):  
-        for name in files:  
-            # print os.path.join(root, name)  
-            tag = re.sub(r'\d.jpg',r'',name)
-            tagValue = tagMap[tag]
+    for root, dirs, files in os.walk(dir1, topdown):
+        for name in files:
+            # print os.path.join(root, name)
+            if(rec):
+                tagValue = os.path.basename(root)
+                tagMap[tagValue] = tagValue
+            else:
+                tagValue = re.sub(r'\d.jpg',r'',name)
+                if(len(tagMap[tagValue])):
+                    tagValue = tagMap[tagValue]
             for_update.add(tagValue)
             app.inputs.create_image_from_filename(filename=os.path.join(root,name), concepts=[tagValue])
-        # for name in dirs:  
-        #     print os.path.join(root, name)  
+        for name in dirs:
+            walk_dir(dir1=name,recursion = 1,topdown = True)
     # 更新的情况
 
 walk_dir(sys.argv[1])
